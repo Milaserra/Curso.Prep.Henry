@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return (array[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array [array.length - 1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
 
 
@@ -23,13 +26,21 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+ var nuevoArray = [];
+ for (i=0; i < array.length; i++){
+   nuevoArray [i] = array [i] +1;
+ }
+ return nuevoArray;
 }
-
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+ 
+
+ array.push("elemento");
+ return array;
 }
 
 
@@ -38,6 +49,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+
+array.unshift("elemento");
+return array;
 }
 
 
@@ -47,6 +61,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+ return palabras.join(" ");
 }
 
 
@@ -54,6 +69,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (var i= 0; i< array.length; i++){
+      if (array [i] === elemento){
+        return true;
+      }
+  }
+  return false;
 }
 
 
@@ -61,6 +82,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var numeros =[];
+for (let i = 0; i < agregarNumeros.length; i++){
+suma = suma + numeros [i];
+return suma;
 }
 
 
@@ -114,6 +139,7 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   
+
 } 
 
 
@@ -122,6 +148,7 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+
 }
 
 
@@ -140,6 +167,11 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+for (i = 0; i < 10; i++){
+
+}
+if 
+return array;
 }
 
 
@@ -177,4 +209,4 @@ module.exports = {
   mayorACien,
   breakStatement,
   continueStatement
-};
+}
